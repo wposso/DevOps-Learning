@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Guna.UI2.WinForms;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,35 +9,65 @@ namespace DevOps_Learning.Class
 {
     internal class _VisiblePasswordControl
     {
-        private ScreenLogin _screenLogin;
-        
-        public _VisiblePasswordControl(ScreenLogin screenlogin, Dictionary<string, Control> dictionaryControls) 
+        private _ScreenLogin _screenLogin;
+
+        public _VisiblePasswordControl(_ScreenLogin screenlogin, Dictionary<string, Control> dictionaryControls)
         {
             _screenLogin = screenlogin;
             this.dictionaryControls = dictionaryControls;
+            dictionaryControlsDefinition();
         }
 
         private Dictionary<string, Control> dictionaryControls;
-        private string _values;
-        private void dictionaryControlsDefinition() 
-        { 
-            if(_screenLogin != null && _screenLogin.dictionaryControls != null) 
+        private Control _btnShowPassword;
+        private Guna2TextBox _txtPassword;
+        private void dictionaryControlsDefinition()
+        {
+            if (_screenLogin != null && _screenLogin.dictionaryControls != null)
             {
                 var controls = _screenLogin.dictionaryControls;
-                if (controls.ContainsKey("btnShowPassword")) 
+                if (controls.ContainsKey("btnShowPassword") &&
+                    controls.ContainsKey("txtPassword"))
                 {
-                    _values = controls["btnShowPassword"].Text;
+                    _btnShowPassword = controls["btnShowPassword"];
+                    _txtPassword = controls["txtPassword"] as Guna2TextBox;
                 }
             }
-            else 
+            else
             {
                 MessageBox.Show("Debug: _screenLogin.dictionaryControls not initialized");
             }
         }
-        public void showPassword(object sender, EventArgs e) 
+        public void showPassword(object sender, EventArgs e)
         {
-            dictionaryControlsDefinition();
+            if (dictionaryControls != null) 
+            {
+                _btnShowPassword.Visible = true;
+            }
             
+        }
+        public void hidePassword(object sender, EventArgs e)
+        {
+            if (dictionaryControls != null) 
+            {
+                _btnShowPassword.Visible = false;
+            }
+            
+        }
+        public void mouseEnter(object sender, EventArgs e) 
+        {
+            if (dictionaryControls != null) 
+            {
+                _txtPassword.PasswordChar = '\0';
+            }
+            
+        }
+        public void mouseLeave(object sender, EventArgs e) 
+        {
+            if (dictionaryControls != null) 
+            {
+                _txtPassword.PasswordChar = '•';
+            }
         }
     }
 }

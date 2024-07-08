@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\willi\\OneDrive\\Escritorio\\Proyectos_Desarrollo\\DevOps Learning\\DevOps Learning\\DevOps Learning.csproj": {}
+    "C:\\Users\\soporte MPOS\\Downloads\\Clone\\DevOps-Learning\\DevOps Learning\\DevOps Learning.csproj": {}
   },
   "projects": {
-    "C:\\Users\\willi\\OneDrive\\Escritorio\\Proyectos_Desarrollo\\DevOps Learning\\DevOps Learning\\DevOps Learning.csproj": {
+    "C:\\Users\\soporte MPOS\\Downloads\\Clone\\DevOps-Learning\\DevOps Learning\\DevOps Learning.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\willi\\OneDrive\\Escritorio\\Proyectos_Desarrollo\\DevOps Learning\\DevOps Learning\\DevOps Learning.csproj",
+        "projectUniqueName": "C:\\Users\\soporte MPOS\\Downloads\\Clone\\DevOps-Learning\\DevOps Learning\\DevOps Learning.csproj",
         "projectName": "DevOps Learning",
-        "projectPath": "C:\\Users\\willi\\OneDrive\\Escritorio\\Proyectos_Desarrollo\\DevOps Learning\\DevOps Learning\\DevOps Learning.csproj",
-        "packagesPath": "C:\\Users\\willi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\willi\\OneDrive\\Escritorio\\Proyectos_Desarrollo\\DevOps Learning\\DevOps Learning\\obj\\",
+        "projectPath": "C:\\Users\\soporte MPOS\\Downloads\\Clone\\DevOps-Learning\\DevOps Learning\\DevOps Learning.csproj",
+        "packagesPath": "C:\\Users\\soporte MPOS\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\soporte MPOS\\Downloads\\Clone\\DevOps-Learning\\DevOps Learning\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\willi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\soporte MPOS\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,6 +22,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -77,7 +78,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

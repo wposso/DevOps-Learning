@@ -8,20 +8,23 @@ using System.Data.SqlClient;
 
 namespace DevOps_Learning.Class
 {
-    internal class _LoginMethod
+    internal class _LoginMethodControl
     {
-        private ScreenLogin _screenLogin;
-        public _LoginMethod(ScreenLogin screenLogin, Dictionary<string, Control> dictionaryControls) 
+        private _ScreenLogin _screenLogin;
+        private _DeleteFieldsControl _deleteFieldsControl;
+        public _LoginMethodControl(_ScreenLogin screenLogin, _DeleteFieldsControl deleteFieldsControl, Dictionary<string, Control> dictionaryControls) 
         {
             _screenLogin = screenLogin;
+            _deleteFieldsControl = deleteFieldsControl;
             this._dictionaryControls = dictionaryControls;
+            
         }
         private Dictionary<string, Control> _dictionaryControls;
         private string txtUsername;
         private string txtPassword;
         private void dictionaryControlsDefinition() 
         {
-            if(_screenLogin != null && _screenLogin.dictionaryControls != null) 
+            if (_screenLogin != null && _screenLogin.dictionaryControls != null) 
             {
                 var _txtUsername = _screenLogin.dictionaryControls;
                 var _txtPassword = _screenLogin.dictionaryControls;
@@ -55,16 +58,19 @@ namespace DevOps_Learning.Class
 
                     if(reader.Read()) 
                     {
+                        _deleteFieldsControl.deleteFields(sender, e);
                         MessageBox.Show("Message: user found success");
                     }
                     else 
                     {
+                        _deleteFieldsControl.deleteFields(sender, e);
                         MessageBox.Show("Message: user not found");
                     }
                 }
             }
             catch(Exception ex) 
             {
+                _deleteFieldsControl.deleteFields(sender, e);
                 MessageBox.Show("Error: " + ex.Message);
             }
         }
