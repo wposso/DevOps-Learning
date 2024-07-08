@@ -28,12 +28,15 @@ namespace DevOps_Learning.Class
                     _values = controls["btnShowPassword"].Text;
                 }
             }
+            else 
+            {
+                MessageBox.Show("Debug: _screenLogin.dictionaryControls not initialized");
+            }
         }
         public void showPassword(object sender, EventArgs e) 
         {
             dictionaryControlsDefinition();
-            _values = "Propiedad del boton";
-            MessageBox.Show(_values);
+            
         }
     }
 }

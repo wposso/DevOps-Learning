@@ -38,3 +38,4 @@ C:\Users\willi\OneDrive\Escritorio\Proyectos_Desarrollo\DevOps Learning\DevOps L
 C:\Users\willi\OneDrive\Escritorio\Proyectos_Desarrollo\DevOps Learning\DevOps Learning\bin\Debug\net8.0-windows\runtimes\win-x86\native\sni.dll
 C:\Users\willi\OneDrive\Escritorio\Proyectos_Desarrollo\DevOps Learning\DevOps Learning\bin\Debug\net8.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\willi\OneDrive\Escritorio\Proyectos_Desarrollo\DevOps Learning\DevOps Learning\bin\Debug\net8.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\willi\OneDrive\Escritorio\Proyectos_Desarrollo\DevOps Learning\DevOps Learning\obj\Debug\net8.0-windows\DevOps Learning.sourcelink.json

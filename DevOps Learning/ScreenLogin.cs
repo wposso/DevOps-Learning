@@ -6,6 +6,8 @@ namespace DevOps_Learning
     public partial class ScreenLogin : Form
     {
         private _VisiblePasswordControl _visiblePasswordControl;
+        private _LoginMethod _loginMethod;
+
         public ScreenLogin()
         {
             InitializeComponent();
@@ -24,6 +26,7 @@ namespace DevOps_Learning
         private void InitializeClass() 
         {
             _visiblePasswordControl = new _VisiblePasswordControl(this,dictionaryControls);
+            _loginMethod = new _LoginMethod(this,dictionaryControls);
         }
 
         public Dictionary<string, Control> dictionaryControls;
@@ -41,7 +44,7 @@ namespace DevOps_Learning
         }
         private void btnLogin_Click(object sender, EventArgs e)
         {
-
+            _loginMethod._loginMethod(sender, e);
         }
 
         private void btnExit_Click(object sender, EventArgs e)
