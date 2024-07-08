@@ -1,0 +1,40 @@
+C:\Users\willi\OneDrive\Escritorio\Proyectos_Desarrollo\DevOps Learning\DevOps Learning\bin\Debug\net8.0-windows\DevOps Learning.exe
+C:\Users\willi\OneDrive\Escritorio\Proyectos_Desarrollo\DevOps Learning\DevOps Learning\bin\Debug\net8.0-windows\DevOps Learning.deps.json
+C:\Users\willi\OneDrive\Escritorio\Proyectos_Desarrollo\DevOps Learning\DevOps Learning\bin\Debug\net8.0-windows\DevOps Learning.runtimeconfig.json
+C:\Users\willi\OneDrive\Escritorio\Proyectos_Desarrollo\DevOps Learning\DevOps Learning\bin\Debug\net8.0-windows\DevOps Learning.dll
+C:\Users\willi\OneDrive\Escritorio\Proyectos_Desarrollo\DevOps Learning\DevOps Learning\bin\Debug\net8.0-windows\DevOps Learning.pdb
+C:\Users\willi\OneDrive\Escritorio\Proyectos_Desarrollo\DevOps Learning\DevOps Learning\bin\Debug\net8.0-windows\Guna.UI2.dll
+C:\Users\willi\OneDrive\Escritorio\Proyectos_Desarrollo\DevOps Learning\DevOps Learning\bin\Debug\net8.0-windows\System.Management.dll
+C:\Users\willi\OneDrive\Escritorio\Proyectos_Desarrollo\DevOps Learning\DevOps Learning\bin\Debug\net8.0-windows\runtimes\win\lib\net7.0\System.Management.dll
+C:\Users\willi\OneDrive\Escritorio\Proyectos_Desarrollo\DevOps Learning\DevOps Learning\obj\Debug\net8.0-windows\DevOps Learning.csproj.AssemblyReference.cache
+C:\Users\willi\OneDrive\Escritorio\Proyectos_Desarrollo\DevOps Learning\DevOps Learning\obj\Debug\net8.0-windows\DevOps_Learning.ScreenLogin.resources
+C:\Users\willi\OneDrive\Escritorio\Proyectos_Desarrollo\DevOps Learning\DevOps Learning\obj\Debug\net8.0-windows\DevOps Learning.csproj.GenerateResource.cache
+C:\Users\willi\OneDrive\Escritorio\Proyectos_Desarrollo\DevOps Learning\DevOps Learning\obj\Debug\net8.0-windows\DevOps Learning.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\willi\OneDrive\Escritorio\Proyectos_Desarrollo\DevOps Learning\DevOps Learning\obj\Debug\net8.0-windows\DevOps Learning.AssemblyInfoInputs.cache
+C:\Users\willi\OneDrive\Escritorio\Proyectos_Desarrollo\DevOps Learning\DevOps Learning\obj\Debug\net8.0-windows\DevOps Learning.AssemblyInfo.cs
+C:\Users\willi\OneDrive\Escritorio\Proyectos_Desarrollo\DevOps Learning\DevOps Learning\obj\Debug\net8.0-windows\DevOps Learning.csproj.CoreCompileInputs.cache
+C:\Users\willi\OneDrive\Escritorio\Proyectos_Desarrollo\DevOps Learning\DevOps Learning\obj\Debug\net8.0-windows\DevOps L.C866FD5A.Up2Date
+C:\Users\willi\OneDrive\Escritorio\Proyectos_Desarrollo\DevOps Learning\DevOps Learning\obj\Debug\net8.0-windows\DevOps Learning.dll
+C:\Users\willi\OneDrive\Escritorio\Proyectos_Desarrollo\DevOps Learning\DevOps Learning\obj\Debug\net8.0-windows\refint\DevOps Learning.dll
+C:\Users\willi\OneDrive\Escritorio\Proyectos_Desarrollo\DevOps Learning\DevOps Learning\obj\Debug\net8.0-windows\DevOps Learning.pdb
+C:\Users\willi\OneDrive\Escritorio\Proyectos_Desarrollo\DevOps Learning\DevOps Learning\obj\Debug\net8.0-windows\DevOps Learning.genruntimeconfig.cache
+C:\Users\willi\OneDrive\Escritorio\Proyectos_Desarrollo\DevOps Learning\DevOps Learning\obj\Debug\net8.0-windows\ref\DevOps Learning.dll
+C:\Users\willi\OneDrive\Escritorio\Proyectos_Desarrollo\DevOps Learning\DevOps Learning\obj\Debug\net8.0-windows\DevOps_Learning.Properties.Resources.resources
+C:\Users\willi\OneDrive\Escritorio\Proyectos_Desarrollo\DevOps Learning\DevOps Learning\bin\Debug\net8.0-windows\EntityFramework.SqlServer.dll
+C:\Users\willi\OneDrive\Escritorio\Proyectos_Desarrollo\DevOps Learning\DevOps Learning\bin\Debug\net8.0-windows\EntityFramework.dll
+C:\Users\willi\OneDrive\Escritorio\Proyectos_Desarrollo\DevOps Learning\DevOps Learning\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.dll
+C:\Users\willi\OneDrive\Escritorio\Proyectos_Desarrollo\DevOps Learning\DevOps Learning\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\willi\OneDrive\Escritorio\Proyectos_Desarrollo\DevOps Learning\DevOps Learning\bin\Debug\net8.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\willi\OneDrive\Escritorio\Proyectos_Desarrollo\DevOps Learning\DevOps Learning\bin\Debug\net8.0-windows\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\willi\OneDrive\Escritorio\Proyectos_Desarrollo\DevOps Learning\DevOps Learning\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\willi\OneDrive\Escritorio\Proyectos_Desarrollo\DevOps Learning\DevOps Learning\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\willi\OneDrive\Escritorio\Proyectos_Desarrollo\DevOps Learning\DevOps Learning\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.dll
+C:\Users\willi\OneDrive\Escritorio\Proyectos_Desarrollo\DevOps Learning\DevOps Learning\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\willi\OneDrive\Escritorio\Proyectos_Desarrollo\DevOps Learning\DevOps Learning\bin\Debug\net8.0-windows\Microsoft.Extensions.Options.dll
+C:\Users\willi\OneDrive\Escritorio\Proyectos_Desarrollo\DevOps Learning\DevOps Learning\bin\Debug\net8.0-windows\Microsoft.Extensions.Primitives.dll
+C:\Users\willi\OneDrive\Escritorio\Proyectos_Desarrollo\DevOps Learning\DevOps Learning\bin\Debug\net8.0-windows\System.Data.SqlClient.dll
+C:\Users\willi\OneDrive\Escritorio\Proyectos_Desarrollo\DevOps Learning\DevOps Learning\bin\Debug\net8.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\willi\OneDrive\Escritorio\Proyectos_Desarrollo\DevOps Learning\DevOps Learning\bin\Debug\net8.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\willi\OneDrive\Escritorio\Proyectos_Desarrollo\DevOps Learning\DevOps Learning\bin\Debug\net8.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\willi\OneDrive\Escritorio\Proyectos_Desarrollo\DevOps Learning\DevOps Learning\bin\Debug\net8.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\willi\OneDrive\Escritorio\Proyectos_Desarrollo\DevOps Learning\DevOps Learning\bin\Debug\net8.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
