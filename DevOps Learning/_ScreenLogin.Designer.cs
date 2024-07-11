@@ -30,21 +30,21 @@ namespace DevOps_Learning
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges25 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges26 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges23 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges24 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges21 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges22 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges17 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges27 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges28 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(_ScreenLogin));
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges19 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges20 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(components);
             btnLogin = new Guna.UI2.WinForms.Guna2Button();
             guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(components);
@@ -76,17 +76,17 @@ namespace DevOps_Learning
             // 
             btnLogin.BackColor = SystemColors.Control;
             btnLogin.BorderRadius = 25;
-            btnLogin.CustomizableEdges = customizableEdges25;
+            btnLogin.CustomizableEdges = customizableEdges11;
             btnLogin.DisabledState.BorderColor = Color.DarkGray;
             btnLogin.DisabledState.CustomBorderColor = Color.DarkGray;
             btnLogin.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             btnLogin.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            btnLogin.FillColor = Color.FromArgb(99, 94, 242);
+            btnLogin.FillColor = Color.FromArgb(111, 107, 242);
             btnLogin.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnLogin.ForeColor = Color.White;
             btnLogin.Location = new Point(28, 645);
             btnLogin.Name = "btnLogin";
-            btnLogin.ShadowDecoration.CustomizableEdges = customizableEdges26;
+            btnLogin.ShadowDecoration.CustomizableEdges = customizableEdges12;
             btnLogin.Size = new Size(363, 56);
             btnLogin.TabIndex = 0;
             btnLogin.Text = "Login";
@@ -99,7 +99,7 @@ namespace DevOps_Learning
             // txtPassword
             // 
             txtPassword.BorderRadius = 25;
-            txtPassword.CustomizableEdges = customizableEdges23;
+            txtPassword.CustomizableEdges = customizableEdges9;
             txtPassword.DefaultText = "";
             txtPassword.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             txtPassword.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -115,7 +115,7 @@ namespace DevOps_Learning
             txtPassword.PasswordChar = '•';
             txtPassword.PlaceholderText = "Password";
             txtPassword.SelectedText = "";
-            txtPassword.ShadowDecoration.CustomizableEdges = customizableEdges24;
+            txtPassword.ShadowDecoration.CustomizableEdges = customizableEdges10;
             txtPassword.Size = new Size(363, 55);
             txtPassword.TabIndex = 2;
             txtPassword.TextChanged += txtPassword_TextChanged;
@@ -123,7 +123,7 @@ namespace DevOps_Learning
             // txtUsername
             // 
             txtUsername.BorderRadius = 25;
-            txtUsername.CustomizableEdges = customizableEdges21;
+            txtUsername.CustomizableEdges = customizableEdges7;
             txtUsername.DefaultText = "";
             txtUsername.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             txtUsername.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -139,7 +139,7 @@ namespace DevOps_Learning
             txtUsername.PasswordChar = '\0';
             txtUsername.PlaceholderText = "Username";
             txtUsername.SelectedText = "";
-            txtUsername.ShadowDecoration.CustomizableEdges = customizableEdges22;
+            txtUsername.ShadowDecoration.CustomizableEdges = customizableEdges8;
             txtUsername.Size = new Size(363, 55);
             txtUsername.TabIndex = 1;
             // 
@@ -173,7 +173,7 @@ namespace DevOps_Learning
             // btnToken
             // 
             btnToken.BorderRadius = 25;
-            btnToken.CustomizableEdges = customizableEdges17;
+            btnToken.CustomizableEdges = customizableEdges3;
             btnToken.DisabledState.BorderColor = Color.DarkGray;
             btnToken.DisabledState.CustomBorderColor = Color.DarkGray;
             btnToken.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -186,7 +186,7 @@ namespace DevOps_Learning
             btnToken.ImageSize = new Size(40, 40);
             btnToken.Location = new Point(5, 7);
             btnToken.Name = "btnToken";
-            btnToken.ShadowDecoration.CustomizableEdges = customizableEdges18;
+            btnToken.ShadowDecoration.CustomizableEdges = customizableEdges4;
             btnToken.Size = new Size(363, 56);
             btnToken.TabIndex = 8;
             btnToken.Text = "With Token";
@@ -223,7 +223,7 @@ namespace DevOps_Learning
             lblCreateAccount.AutoSize = true;
             lblCreateAccount.Cursor = Cursors.Hand;
             lblCreateAccount.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblCreateAccount.ForeColor = Color.FromArgb(99, 94, 242);
+            lblCreateAccount.ForeColor = Color.FromArgb(111, 107, 242);
             lblCreateAccount.Location = new Point(157, 720);
             lblCreateAccount.Name = "lblCreateAccount";
             lblCreateAccount.Size = new Size(113, 20);
@@ -261,7 +261,6 @@ namespace DevOps_Learning
             // label3
             // 
             label3.AutoSize = true;
-            label3.Cursor = Cursors.Hand;
             label3.Location = new Point(77, 215);
             label3.Name = "label3";
             label3.Size = new Size(278, 20);
@@ -283,10 +282,10 @@ namespace DevOps_Learning
             pnlContainer.Controls.Add(txtUsername);
             pnlContainer.Controls.Add(txtPassword);
             pnlContainer.Controls.Add(btnLogin);
-            pnlContainer.CustomizableEdges = customizableEdges27;
+            pnlContainer.CustomizableEdges = customizableEdges13;
             pnlContainer.Location = new Point(19, 43);
             pnlContainer.Name = "pnlContainer";
-            pnlContainer.ShadowDecoration.CustomizableEdges = customizableEdges28;
+            pnlContainer.ShadowDecoration.CustomizableEdges = customizableEdges14;
             pnlContainer.Size = new Size(420, 745);
             pnlContainer.TabIndex = 19;
             // 
@@ -294,21 +293,21 @@ namespace DevOps_Learning
             // 
             guna2Panel1.BackgroundImage = (Image)resources.GetObject("guna2Panel1.BackgroundImage");
             guna2Panel1.BackgroundImageLayout = ImageLayout.Stretch;
-            guna2Panel1.CustomizableEdges = customizableEdges15;
+            guna2Panel1.CustomizableEdges = customizableEdges1;
             guna2Panel1.Location = new Point(135, 3);
             guna2Panel1.Name = "guna2Panel1";
             guna2Panel1.RightToLeft = RightToLeft.No;
-            guna2Panel1.ShadowDecoration.CustomizableEdges = customizableEdges16;
+            guna2Panel1.ShadowDecoration.CustomizableEdges = customizableEdges2;
             guna2Panel1.Size = new Size(160, 144);
             guna2Panel1.TabIndex = 20;
             // 
             // pnlToken
             // 
             pnlToken.Controls.Add(btnToken);
-            pnlToken.CustomizableEdges = customizableEdges19;
+            pnlToken.CustomizableEdges = customizableEdges5;
             pnlToken.Location = new Point(23, 295);
             pnlToken.Name = "pnlToken";
-            pnlToken.ShadowDecoration.CustomizableEdges = customizableEdges20;
+            pnlToken.ShadowDecoration.CustomizableEdges = customizableEdges6;
             pnlToken.Size = new Size(378, 71);
             pnlToken.TabIndex = 19;
             // 
@@ -320,9 +319,10 @@ namespace DevOps_Learning
             Controls.Add(pnlContainer);
             Controls.Add(btnExit);
             FormBorderStyle = FormBorderStyle.None;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "_ScreenLogin";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Form1";
+            Text = "Screen Login";
             pnlContainer.ResumeLayout(false);
             pnlContainer.PerformLayout();
             pnlToken.ResumeLayout(false);

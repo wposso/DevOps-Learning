@@ -11,23 +11,25 @@ namespace DevOps_Learning.Class
     internal class _TokenValidateControl
     {
         private _ScreenToken _ScreenToken;
-        public _TokenValidateControl(_ScreenToken screenToken, Dictionary<string, Control> dictionaryControls) 
+        private _DeleteFieldsControl _deleteFieldsControl;
+        public _TokenValidateControl(_ScreenToken screenToken, _DeleteFieldsControl deleteFieldsControl,Dictionary<string, Control> dictionaryControls) 
         {
             _ScreenToken = screenToken;
+            _deleteFieldsControl = deleteFieldsControl;
             this._dictionaryControls = dictionaryControls;
         }
 
         private Dictionary<string, Control> _dictionaryControls;
         private string _txtBoxs;
-        private void dictionaryControlsDefinition() 
+        private void dictionaryControlsDefinition()
         {
-            if (_ScreenToken != null && _ScreenToken._dictionaryControls != null) 
+            if (_ScreenToken != null && _ScreenToken._dictionaryControls != null)
             {
                 var _controls = _ScreenToken._dictionaryControls;
-                if(_controls.ContainsKey("txtToken1") &&
+                if (_controls.ContainsKey("txtToken1") &&
                     _controls.ContainsKey("txtToken2") &&
                     _controls.ContainsKey("txtToken3") &&
-                    _controls.ContainsKey("txtToken4")) 
+                    _controls.ContainsKey("txtToken4"))
                 {
                     Guna2TextBox txtToken1 = _controls["txtToken1"] as Guna2TextBox;
                     Guna2TextBox txtToken2 = _controls["txtToken2"] as Guna2TextBox;
@@ -36,9 +38,9 @@ namespace DevOps_Learning.Class
 
                     _txtBoxs = txtToken1.Text + txtToken2.Text + txtToken3.Text + txtToken4.Text;
                 }
-                
+
             }
-            else 
+            else
             {
                 MessageBox.Show("Debug: _ScreenToken._dictionaryControls not initialized");
             }
@@ -46,30 +48,38 @@ namespace DevOps_Learning.Class
         public void tokenValidate(object sender, EventArgs e) 
         {
             dictionaryControlsDefinition();
-            try
+            if (!string.IsNullOrEmpty(_txtBoxs)) 
             {
-                string code = "select id from Users where id=@id";
-                using (SqlConnection connectionSQL = _DataBaseConnectionControl.GetConnection())
+                try
                 {
-                    connectionSQL.Open();
-                    SqlCommand command = new SqlCommand(code, connectionSQL);
-                    command.Parameters.AddWithValue("@id", _txtBoxs);
-                    SqlDataReader reader = command.ExecuteReader();
+                    string code = "select id from Users where id=@id";
+                    using (SqlConnection connectionSQL = _DataBaseConnectionControl.GetConnection())
+                    {
+                        connectionSQL.Open();
+                        SqlCommand command = new SqlCommand(code, connectionSQL);
+                        command.Parameters.AddWithValue("@id", _txtBoxs);
+                        SqlDataReader reader = command.ExecuteReader();
 
-                    if (reader.Read())
-                    {
-                        MessageBox.Show("Debug: Token found");
-                    }
-                    else
-                    {
-                        MessageBox.Show("Debug: Token not found");
+                        if (reader.Read())
+                        {
+                            MessageBox.Show("Debug: Token found");
+                        }
+                        else
+                        {
+                            MessageBox.Show("Debug: Token not found");
+                        }
                     }
                 }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error: " + ex.Message);
+                }
             }
-            catch (Exception ex) 
+            else 
             {
-                MessageBox.Show("Error: " + ex.Message);
+                MessageBox.Show("Debug: Please fill all fields");
             }
+            _deleteFieldsControl.deleteTokenControls(sender,e);
         }
     }
 }

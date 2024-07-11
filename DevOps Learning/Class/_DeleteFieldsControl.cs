@@ -10,10 +10,13 @@ namespace DevOps_Learning.Class
     internal class _DeleteFieldsControl
     {
         private _ScreenLogin _screenLogin;
-        public _DeleteFieldsControl(_ScreenLogin screenLogin, Dictionary<string, Control> dictionaryControls) 
+        private _ScreenToken _screenToken;
+        public _DeleteFieldsControl(_ScreenLogin screenLogin, _ScreenToken screenToken, Dictionary<string, Control> dictionaryControls, Dictionary<string, Control> dictionaryTokenControls) 
         {
             _screenLogin = screenLogin;
+            _screenToken = screenToken;
             this._dictionaryControls = dictionaryControls;
+            this._dictionaryTokenControls = dictionaryTokenControls;
         }
         private Dictionary<string, Control> _dictionaryControls;
         private Guna2TextBox _txtUsername;
@@ -47,6 +50,46 @@ namespace DevOps_Learning.Class
             dictionaryControlsDefinition();
             if (_txtUsername != null) _txtUsername.Clear();
             if (_txtPassword != null) _txtPassword.Clear();
+        }
+
+        private Dictionary<string, Control> _dictionaryTokenControls;
+        private Guna2TextBox _txtToken1;
+        private Guna2TextBox _txtToken2;
+        private Guna2TextBox _txtToken3;
+        private Guna2TextBox _txtToken4;
+        private void dictionarTokenDefinition() 
+        {
+            if(_screenToken != null && _screenToken._dictionaryControls != null) 
+            {
+                var tokenControls = _screenToken._dictionaryControls;
+                if(tokenControls.ContainsKey("txtToken1") &&
+                    tokenControls.ContainsKey("txtToken2") &&
+                    tokenControls.ContainsKey("txtToken3") &&
+                    tokenControls.ContainsKey("txtToken4")) 
+                {
+                    _txtToken1 = tokenControls["txtToken1"] as Guna2TextBox;
+                    _txtToken2 = tokenControls["txtToken2"] as Guna2TextBox;
+                    _txtToken3 = tokenControls["txtToken3"] as Guna2TextBox;
+                    _txtToken4 = tokenControls["txtToken4"] as Guna2TextBox;
+                }
+                else 
+                {
+                    MessageBox.Show("Debug: _screenToken._dictionaryControls is null");
+                }
+            }
+            else 
+            {
+                MessageBox.Show("Debug: dictionarTokenDefinition() not initialize");
+            }
+        }
+        public void deleteTokenControls(object sender, EventArgs e) 
+        {
+            dictionarTokenDefinition();
+
+            if (_txtToken1 != null) _txtToken1.Clear();
+            if(_txtToken2 != null) _txtToken2.Clear();
+            if(_txtToken3 != null) _txtToken3.Clear();
+            if(_txtToken4 != null) _txtToken4.Clear();
         }
     }
 }

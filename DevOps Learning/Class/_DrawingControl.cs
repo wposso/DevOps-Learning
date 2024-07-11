@@ -17,8 +17,8 @@ namespace DevOps_Learning.Class
         public static Label labelSignature() 
         {
             Label lblSignature = new Label();
-            lblSignature.Text = "by DobleU";
-            lblSignature.Location = new Point(10,10);
+            lblSignature.Text = "@by DobleU";
+            lblSignature.Location = new Point(1,730);
             lblSignature.Size = new Size(150,30);
             lblSignature.ForeColor = Color.Black;
             lblSignature.Font = new Font("Arial",7);

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DevOps Learning")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5a38bc35787d8c4c162eba968394efdccfd1c273")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+34427221cfdd0c7000f690c10306e1db5a53da95")]
 [assembly: System.Reflection.AssemblyProductAttribute("DevOps Learning")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DevOps Learning")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

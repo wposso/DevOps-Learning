@@ -14,6 +14,7 @@ namespace DevOps_Learning
     public partial class _ScreenToken : Form
     {
         private _TokenValidateControl _tokenValidateControl;
+        private _DeleteFieldsControl _deleteFieldsControl;
         public _ScreenToken()
         {
             InitializeComponent();
@@ -23,7 +24,7 @@ namespace DevOps_Learning
         }
         private void InitializeClass() 
         {
-            _tokenValidateControl = new _TokenValidateControl(this,_dictionaryControls);
+            _tokenValidateControl = new _TokenValidateControl(this,_deleteFieldsControl,_dictionaryControls);
         }
 
         public Dictionary<string, Control> _dictionaryControls;

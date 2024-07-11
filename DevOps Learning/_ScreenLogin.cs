@@ -16,7 +16,7 @@ namespace DevOps_Learning
         public _ScreenLogin()
         {
             InitializeComponent();
-            InitializeDrawnControls();
+            //InitializeDrawnControls();
             Dictionarys();
             InitializeScreens();
             InitializeClass();
@@ -31,9 +31,9 @@ namespace DevOps_Learning
         private void InitializeClass()
         {
             _visiblePasswordControl = new _VisiblePasswordControl(this, dictionaryControls);
-            _DeleteFieldsControl = new _DeleteFieldsControl(this, dictionaryControls);
+            _DeleteFieldsControl = new _DeleteFieldsControl(this, _ScreenToken,dictionaryControls,dictionaryControls);
             _loginMethod = new _LoginMethodControl(this, _DeleteFieldsControl, dictionaryControls);
-            _tokenValidateControl = new _TokenValidateControl(_ScreenToken, dictionaryControls);
+            _tokenValidateControl = new _TokenValidateControl(_ScreenToken, _DeleteFieldsControl,dictionaryControls);
 
         }
         private void Dictionarys()
@@ -64,6 +64,8 @@ namespace DevOps_Learning
         {
             _signatureControl = _DrawingControl.labelSignature();
             this.Controls.Add( _signatureControl );
+            pnlContainer.Controls.Add(_signatureControl);
+            _signatureControl.BringToFront();
         }
         private void InitializeCallControl() 
         {
