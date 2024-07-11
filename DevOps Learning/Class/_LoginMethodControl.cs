@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
+using Guna.UI2.WinForms;
 
 namespace DevOps_Learning.Class
 {
@@ -17,11 +18,10 @@ namespace DevOps_Learning.Class
             _screenLogin = screenLogin;
             _deleteFieldsControl = deleteFieldsControl;
             this._dictionaryControls = dictionaryControls;
-            
         }
         private Dictionary<string, Control> _dictionaryControls;
-        private string txtUsername;
-        private string txtPassword;
+        private Guna2TextBox txtUsername;
+        private Guna2TextBox txtPassword;
         private void dictionaryControlsDefinition() 
         {
             if (_screenLogin != null && _screenLogin.dictionaryControls != null) 
@@ -32,46 +32,63 @@ namespace DevOps_Learning.Class
                 if(_txtUsername.ContainsKey("txtUsername") &&
                     _txtPassword.ContainsKey("txtPassword")) 
                 {
-                    txtUsername = _txtUsername["txtUsername"].Text;
-                    txtPassword = _txtPassword["txtPassword"].Text;
+                    txtUsername = _txtUsername["txtUsername"] as Guna2TextBox;
+                    txtPassword = _txtPassword["txtPassword"] as Guna2TextBox;
+                }
+                else 
+                {
+                    MessageBox.Show("Debug: dictionaryControlsDefinition() no initialize");
                 }
             }
             else 
             {
-                MessageBox.Show("Debug: " + _screenLogin.dictionaryControls);
+                MessageBox.Show("Debug: _screenLogin.dictionaryControls is null");
             }
         }
 
         public void _loginMethod(object sender, EventArgs e)
         {
             dictionaryControlsDefinition();
-            try 
-            {
-                string code = "select Username,Password from Users where Username=@username and Password=@password";
-                using (SqlConnection connectionSQL = _DataBaseConnectionControl.GetConnection()) 
-                {
-                    connectionSQL.Open();
-                    SqlCommand command = new SqlCommand(code,connectionSQL);
-                    command.Parameters.AddWithValue("username",txtUsername);
-                    command.Parameters.AddWithValue("password",txtPassword);
-                    SqlDataReader reader = command.ExecuteReader();
 
-                    if(reader.Read()) 
+            if(string.IsNullOrEmpty(txtUsername.Text) || string.IsNullOrEmpty(txtUsername.Text)) 
+            {
+                MessageBox.Show("Debug: Please fill all fields");
+            }
+            else 
+            {
+                try
+                {
+                    string code = "select Username,Password from Users where Username=@username and Password=@password";
+                    using (SqlConnection connectionSQL = _DataBaseConnectionControl.GetConnection())
                     {
-                        _deleteFieldsControl.deleteFields(sender, e);
-                        MessageBox.Show("Message: user found success");
-                    }
-                    else 
-                    {
-                        _deleteFieldsControl.deleteFields(sender, e);
-                        MessageBox.Show("Message: user not found");
+                        connectionSQL.Open();
+                        SqlCommand command = new SqlCommand(code, connectionSQL);
+                        command.Parameters.AddWithValue("username", txtUsername.Text);
+                        command.Parameters.AddWithValue("password", txtPassword.Text);
+                        SqlDataReader reader = command.ExecuteReader();
+
+                        if (reader.Read())
+                        {
+                            MessageBox.Show("Message: user found success");
+                        }
+                        else
+                        {
+                            MessageBox.Show("Message: user not found");
+                        }
                     }
                 }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error: " + ex.Message);
+                }
             }
-            catch(Exception ex) 
+            if (_deleteFieldsControl != null)
             {
                 _deleteFieldsControl.deleteFields(sender, e);
-                MessageBox.Show("Error: " + ex.Message);
+            }
+            else
+            {
+                MessageBox.Show("Error: _deleteFieldsControl es null");
             }
         }
     }

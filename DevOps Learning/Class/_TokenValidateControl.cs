@@ -15,14 +15,13 @@ namespace DevOps_Learning.Class
         {
             _ScreenToken = screenToken;
             this._dictionaryControls = dictionaryControls;
-            dictionaryControlsDefinition();
         }
 
         private Dictionary<string, Control> _dictionaryControls;
         private string _txtBoxs;
         private void dictionaryControlsDefinition() 
         {
-            if (_ScreenToken == null && _ScreenToken._dictionaryControls != null) 
+            if (_ScreenToken != null && _ScreenToken._dictionaryControls != null) 
             {
                 var _controls = _ScreenToken._dictionaryControls;
                 if(_controls.ContainsKey("txtToken1") &&
@@ -37,7 +36,7 @@ namespace DevOps_Learning.Class
 
                     _txtBoxs = txtToken1.Text + txtToken2.Text + txtToken3.Text + txtToken4.Text;
                 }
-                MessageBox.Show("Token: " + _txtBoxs);
+                
             }
             else 
             {
@@ -46,6 +45,7 @@ namespace DevOps_Learning.Class
         }
         public void tokenValidate(object sender, EventArgs e) 
         {
+            dictionaryControlsDefinition();
             try
             {
                 string code = "select id from Users where id=@id";

@@ -82,3 +82,4 @@ C:\Users\soporte MPOS\Downloads\Clone\DevOps-Learning\DevOps Learning\obj\Debug\
 C:\Users\soporte MPOS\Downloads\Clone\DevOps-Learning\DevOps Learning\obj\Debug\net8.0-windows\DevOps_Learning._ScreenLogin.resources
 C:\Users\soporte MPOS\Downloads\Clone\DevOps-Learning\DevOps Learning\obj\Debug\net8.0-windows\DevOps_Learning._ScreenRegister.resources
 C:\Users\soporte MPOS\Downloads\Clone\DevOps-Learning\DevOps Learning\obj\Debug\net8.0-windows\DevOps_Learning._ScreenToken.resources
+C:\Users\soporte MPOS\Downloads\Clone\DevOps-Learning\DevOps Learning\bin\Debug\net8.0-windows\Aspose.SVG.dll

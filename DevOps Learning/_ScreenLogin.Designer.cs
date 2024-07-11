@@ -30,19 +30,21 @@ namespace DevOps_Learning
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges25 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges26 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges23 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges24 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges21 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges22 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges17 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges27 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges28 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(_ScreenLogin));
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges19 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges20 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(components);
             btnLogin = new Guna.UI2.WinForms.Guna2Button();
             guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(components);
@@ -59,6 +61,7 @@ namespace DevOps_Learning
             guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             label3 = new Label();
             pnlContainer = new Guna.UI2.WinForms.Guna2Panel();
+            guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             pnlToken = new Guna.UI2.WinForms.Guna2Panel();
             pnlContainer.SuspendLayout();
             pnlToken.SuspendLayout();
@@ -73,18 +76,17 @@ namespace DevOps_Learning
             // 
             btnLogin.BackColor = SystemColors.Control;
             btnLogin.BorderRadius = 25;
-            btnLogin.Cursor = Cursors.Hand;
-            btnLogin.CustomizableEdges = customizableEdges9;
+            btnLogin.CustomizableEdges = customizableEdges25;
             btnLogin.DisabledState.BorderColor = Color.DarkGray;
             btnLogin.DisabledState.CustomBorderColor = Color.DarkGray;
             btnLogin.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             btnLogin.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            btnLogin.FillColor = Color.FromArgb(0, 0, 192);
+            btnLogin.FillColor = Color.FromArgb(99, 94, 242);
             btnLogin.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnLogin.ForeColor = Color.White;
-            btnLogin.Location = new Point(27, 574);
+            btnLogin.Location = new Point(28, 645);
             btnLogin.Name = "btnLogin";
-            btnLogin.ShadowDecoration.CustomizableEdges = customizableEdges10;
+            btnLogin.ShadowDecoration.CustomizableEdges = customizableEdges26;
             btnLogin.Size = new Size(363, 56);
             btnLogin.TabIndex = 0;
             btnLogin.Text = "Login";
@@ -97,7 +99,7 @@ namespace DevOps_Learning
             // txtPassword
             // 
             txtPassword.BorderRadius = 25;
-            txtPassword.CustomizableEdges = customizableEdges7;
+            txtPassword.CustomizableEdges = customizableEdges23;
             txtPassword.DefaultText = "";
             txtPassword.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             txtPassword.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -107,13 +109,13 @@ namespace DevOps_Learning
             txtPassword.Font = new Font("Segoe UI", 9F);
             txtPassword.ForeColor = SystemColors.ControlText;
             txtPassword.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtPassword.Location = new Point(27, 398);
+            txtPassword.Location = new Point(28, 469);
             txtPassword.Margin = new Padding(3, 4, 3, 4);
             txtPassword.Name = "txtPassword";
             txtPassword.PasswordChar = '•';
             txtPassword.PlaceholderText = "Password";
             txtPassword.SelectedText = "";
-            txtPassword.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            txtPassword.ShadowDecoration.CustomizableEdges = customizableEdges24;
             txtPassword.Size = new Size(363, 55);
             txtPassword.TabIndex = 2;
             txtPassword.TextChanged += txtPassword_TextChanged;
@@ -121,7 +123,7 @@ namespace DevOps_Learning
             // txtUsername
             // 
             txtUsername.BorderRadius = 25;
-            txtUsername.CustomizableEdges = customizableEdges5;
+            txtUsername.CustomizableEdges = customizableEdges21;
             txtUsername.DefaultText = "";
             txtUsername.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             txtUsername.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -131,20 +133,20 @@ namespace DevOps_Learning
             txtUsername.Font = new Font("Segoe UI", 9F);
             txtUsername.ForeColor = SystemColors.ControlText;
             txtUsername.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtUsername.Location = new Point(27, 335);
+            txtUsername.Location = new Point(28, 406);
             txtUsername.Margin = new Padding(3, 4, 3, 4);
             txtUsername.Name = "txtUsername";
             txtUsername.PasswordChar = '\0';
             txtUsername.PlaceholderText = "Username";
             txtUsername.SelectedText = "";
-            txtUsername.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            txtUsername.ShadowDecoration.CustomizableEdges = customizableEdges22;
             txtUsername.Size = new Size(363, 55);
             txtUsername.TabIndex = 1;
             // 
             // guna2HtmlLabel3
             // 
             guna2HtmlLabel3.BackColor = Color.Transparent;
-            guna2HtmlLabel3.Location = new Point(27, 286);
+            guna2HtmlLabel3.Location = new Point(28, 357);
             guna2HtmlLabel3.Name = "guna2HtmlLabel3";
             guna2HtmlLabel3.Size = new Size(153, 22);
             guna2HtmlLabel3.TabIndex = 5;
@@ -153,7 +155,7 @@ namespace DevOps_Learning
             // guna2HtmlLabel4
             // 
             guna2HtmlLabel4.BackColor = Color.Transparent;
-            guna2HtmlLabel4.Location = new Point(237, 286);
+            guna2HtmlLabel4.Location = new Point(238, 357);
             guna2HtmlLabel4.Name = "guna2HtmlLabel4";
             guna2HtmlLabel4.Size = new Size(153, 22);
             guna2HtmlLabel4.TabIndex = 6;
@@ -162,7 +164,7 @@ namespace DevOps_Learning
             // guna2HtmlLabel5
             // 
             guna2HtmlLabel5.BackColor = Color.Transparent;
-            guna2HtmlLabel5.Location = new Point(198, 293);
+            guna2HtmlLabel5.Location = new Point(199, 364);
             guna2HtmlLabel5.Name = "guna2HtmlLabel5";
             guna2HtmlLabel5.Size = new Size(23, 22);
             guna2HtmlLabel5.TabIndex = 7;
@@ -171,7 +173,7 @@ namespace DevOps_Learning
             // btnToken
             // 
             btnToken.BorderRadius = 25;
-            btnToken.CustomizableEdges = customizableEdges1;
+            btnToken.CustomizableEdges = customizableEdges17;
             btnToken.DisabledState.BorderColor = Color.DarkGray;
             btnToken.DisabledState.CustomBorderColor = Color.DarkGray;
             btnToken.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -184,7 +186,7 @@ namespace DevOps_Learning
             btnToken.ImageSize = new Size(40, 40);
             btnToken.Location = new Point(5, 7);
             btnToken.Name = "btnToken";
-            btnToken.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            btnToken.ShadowDecoration.CustomizableEdges = customizableEdges18;
             btnToken.Size = new Size(363, 56);
             btnToken.TabIndex = 8;
             btnToken.Text = "With Token";
@@ -194,8 +196,10 @@ namespace DevOps_Learning
             // 
             btnExit.BackgroundImage = (Image)resources.GetObject("btnExit.BackgroundImage");
             btnExit.BackgroundImageLayout = ImageLayout.Stretch;
-            btnExit.Cursor = Cursors.Hand;
+            btnExit.FlatAppearance.BorderColor = SystemColors.Control;
             btnExit.FlatAppearance.BorderSize = 0;
+            btnExit.FlatAppearance.MouseDownBackColor = SystemColors.Control;
+            btnExit.FlatAppearance.MouseOverBackColor = SystemColors.Control;
             btnExit.FlatStyle = FlatStyle.Flat;
             btnExit.Location = new Point(418, 4);
             btnExit.Name = "btnExit";
@@ -208,7 +212,7 @@ namespace DevOps_Learning
             // 
             label1.AutoSize = true;
             label1.Cursor = Cursors.Hand;
-            label1.Location = new Point(263, 457);
+            label1.Location = new Point(264, 528);
             label1.Name = "label1";
             label1.Size = new Size(127, 20);
             label1.TabIndex = 14;
@@ -219,8 +223,8 @@ namespace DevOps_Learning
             lblCreateAccount.AutoSize = true;
             lblCreateAccount.Cursor = Cursors.Hand;
             lblCreateAccount.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblCreateAccount.ForeColor = Color.FromArgb(0, 0, 192);
-            lblCreateAccount.Location = new Point(156, 649);
+            lblCreateAccount.ForeColor = Color.FromArgb(99, 94, 242);
+            lblCreateAccount.Location = new Point(157, 720);
             lblCreateAccount.Name = "lblCreateAccount";
             lblCreateAccount.Size = new Size(113, 20);
             lblCreateAccount.TabIndex = 15;
@@ -231,14 +235,13 @@ namespace DevOps_Learning
             // 
             btnShowPassword.BackColor = Color.White;
             btnShowPassword.BackgroundImageLayout = ImageLayout.Stretch;
-            btnShowPassword.Cursor = Cursors.Hand;
             btnShowPassword.FlatAppearance.BorderColor = Color.White;
             btnShowPassword.FlatAppearance.BorderSize = 0;
             btnShowPassword.FlatAppearance.MouseDownBackColor = Color.White;
             btnShowPassword.FlatAppearance.MouseOverBackColor = Color.White;
             btnShowPassword.FlatStyle = FlatStyle.Flat;
             btnShowPassword.Image = (Image)resources.GetObject("btnShowPassword.Image");
-            btnShowPassword.Location = new Point(338, 410);
+            btnShowPassword.Location = new Point(338, 480);
             btnShowPassword.Name = "btnShowPassword";
             btnShowPassword.Size = new Size(34, 33);
             btnShowPassword.TabIndex = 16;
@@ -249,7 +252,7 @@ namespace DevOps_Learning
             // 
             guna2HtmlLabel1.BackColor = Color.Transparent;
             guna2HtmlLabel1.Font = new Font("Segoe UI", 25F, FontStyle.Bold);
-            guna2HtmlLabel1.Location = new Point(90, 43);
+            guna2HtmlLabel1.Location = new Point(101, 153);
             guna2HtmlLabel1.Name = "guna2HtmlLabel1";
             guna2HtmlLabel1.Size = new Size(229, 59);
             guna2HtmlLabel1.TabIndex = 17;
@@ -259,7 +262,7 @@ namespace DevOps_Learning
             // 
             label3.AutoSize = true;
             label3.Cursor = Cursors.Hand;
-            label3.Location = new Point(66, 105);
+            label3.Location = new Point(77, 215);
             label3.Name = "label3";
             label3.Size = new Size(278, 20);
             label3.TabIndex = 18;
@@ -267,6 +270,7 @@ namespace DevOps_Learning
             // 
             // pnlContainer
             // 
+            pnlContainer.Controls.Add(guna2Panel1);
             pnlContainer.Controls.Add(pnlToken);
             pnlContainer.Controls.Add(label3);
             pnlContainer.Controls.Add(guna2HtmlLabel1);
@@ -279,20 +283,32 @@ namespace DevOps_Learning
             pnlContainer.Controls.Add(txtUsername);
             pnlContainer.Controls.Add(txtPassword);
             pnlContainer.Controls.Add(btnLogin);
-            pnlContainer.CustomizableEdges = customizableEdges11;
+            pnlContainer.CustomizableEdges = customizableEdges27;
             pnlContainer.Location = new Point(19, 43);
             pnlContainer.Name = "pnlContainer";
-            pnlContainer.ShadowDecoration.CustomizableEdges = customizableEdges12;
-            pnlContainer.Size = new Size(420, 680);
+            pnlContainer.ShadowDecoration.CustomizableEdges = customizableEdges28;
+            pnlContainer.Size = new Size(420, 745);
             pnlContainer.TabIndex = 19;
+            // 
+            // guna2Panel1
+            // 
+            guna2Panel1.BackgroundImage = (Image)resources.GetObject("guna2Panel1.BackgroundImage");
+            guna2Panel1.BackgroundImageLayout = ImageLayout.Stretch;
+            guna2Panel1.CustomizableEdges = customizableEdges15;
+            guna2Panel1.Location = new Point(135, 3);
+            guna2Panel1.Name = "guna2Panel1";
+            guna2Panel1.RightToLeft = RightToLeft.No;
+            guna2Panel1.ShadowDecoration.CustomizableEdges = customizableEdges16;
+            guna2Panel1.Size = new Size(160, 144);
+            guna2Panel1.TabIndex = 20;
             // 
             // pnlToken
             // 
             pnlToken.Controls.Add(btnToken);
-            pnlToken.CustomizableEdges = customizableEdges3;
-            pnlToken.Location = new Point(22, 224);
+            pnlToken.CustomizableEdges = customizableEdges19;
+            pnlToken.Location = new Point(23, 295);
             pnlToken.Name = "pnlToken";
-            pnlToken.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            pnlToken.ShadowDecoration.CustomizableEdges = customizableEdges20;
             pnlToken.Size = new Size(378, 71);
             pnlToken.TabIndex = 19;
             // 
@@ -300,7 +316,7 @@ namespace DevOps_Learning
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(458, 744);
+            ClientSize = new Size(458, 800);
             Controls.Add(pnlContainer);
             Controls.Add(btnExit);
             FormBorderStyle = FormBorderStyle.None;
@@ -334,5 +350,6 @@ namespace DevOps_Learning
         private Label label3;
         private Guna.UI2.WinForms.Guna2Panel pnlContainer;
         private Guna.UI2.WinForms.Guna2Panel pnlToken;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
     }
 }

@@ -1,5 +1,6 @@
 using DevOps_Learning.Class;
 using Guna.UI2.WinForms;
+using System.Windows.Forms;
 
 namespace DevOps_Learning
 {
@@ -11,10 +12,11 @@ namespace DevOps_Learning
         private _ScreenToken _ScreenToken;
         private _TokenValidateControl _tokenValidateControl;
         private _DeleteFieldsControl _DeleteFieldsControl;
-
+        
         public _ScreenLogin()
         {
             InitializeComponent();
+            InitializeDrawnControls();
             Dictionarys();
             InitializeScreens();
             InitializeClass();
@@ -29,9 +31,10 @@ namespace DevOps_Learning
         private void InitializeClass()
         {
             _visiblePasswordControl = new _VisiblePasswordControl(this, dictionaryControls);
+            _DeleteFieldsControl = new _DeleteFieldsControl(this, dictionaryControls);
             _loginMethod = new _LoginMethodControl(this, _DeleteFieldsControl, dictionaryControls);
-            //_tokenValidateControl = new _TokenValidateControl(_ScreenToken,dictionaryControls);
-            _DeleteFieldsControl = new _DeleteFieldsControl(this,dictionaryControls);
+            _tokenValidateControl = new _TokenValidateControl(_ScreenToken, dictionaryControls);
+
         }
         private void Dictionarys()
         {
@@ -41,6 +44,45 @@ namespace DevOps_Learning
         {
             btnShowPassword.MouseEnter += new EventHandler(_visiblePasswordControl.mouseEnter);
             btnShowPassword.MouseLeave += new EventHandler(_visiblePasswordControl.mouseLeave);
+        }
+        private void buttonsChange() 
+        {
+            if(_buttonLogout.Visible == true) 
+            {
+                btnLogin.Visible = false;
+            }
+            else 
+            {
+                _buttonLogout.Visible = false;
+            }
+        }
+
+        private Label _signatureControl;
+        private Button _tokenLoginControl;
+        private Guna2Button _buttonLogout;
+        private void InitializeDrawnControls() 
+        {
+            _signatureControl = _DrawingControl.labelSignature();
+            this.Controls.Add( _signatureControl );
+        }
+        private void InitializeCallControl() 
+        {
+            //if (_tokenLoginControl == null) 
+            //{
+            //    _tokenLoginControl = _DrawingControl.buttonLogin();
+            //    this.Controls.Add(_tokenLoginControl);
+            //    pnlContainer.Controls.Add(_tokenLoginControl);
+            //    _tokenLoginControl.BringToFront();
+            //    _tokenLoginControl.Click += TokenLoginMethod;
+            //}
+            if (_buttonLogout == null) 
+            {
+                _buttonLogout = _DrawingControl.buttonLogout();
+                this.Controls.Add(_buttonLogout);
+                pnlContainer.Controls.Add( _buttonLogout );
+                _buttonLogout.BringToFront();
+                _buttonLogout.Click += TokenLoginMethod;
+            }
         }
 
         public Dictionary<string, Control> dictionaryControls;
@@ -59,7 +101,10 @@ namespace DevOps_Learning
         private void btnLogin_Click(object sender, EventArgs e)
         {
             _loginMethod._loginMethod(sender, e);
-            //_tokenValidateControl.tokenValidate(sender,e);
+        }
+        private void TokenLoginMethod(object sender, EventArgs e) 
+        {
+            _tokenValidateControl.tokenValidate(sender, e);
         }
 
         private void btnExit_Click(object sender, EventArgs e)
@@ -105,6 +150,9 @@ namespace DevOps_Learning
         private void btnToken_Click(object sender, EventArgs e)
         {
             tokenContainer(_ScreenToken);
+
+            InitializeCallControl();
         }
     }
+    
 }

@@ -46,6 +46,10 @@
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
           "dependencies": {
+            "Aspose.SVG": {
+              "target": "Package",
+              "version": "[24.6.0, )"
+            },
             "EntityFramework": {
               "target": "Package",
               "version": "[6.5.1, )"
