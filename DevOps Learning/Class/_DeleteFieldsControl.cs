@@ -10,15 +10,26 @@ namespace DevOps_Learning.Class
     internal class _DeleteFieldsControl
     {
         private _ScreenLogin _screenLogin;
+        private _ScreenRegister _screenRegister;
         private _ScreenToken _screenToken;
-        public _DeleteFieldsControl(_ScreenLogin screenLogin, _ScreenToken screenToken, Dictionary<string, Control> dictionaryControls, Dictionary<string, Control> dictionaryTokenControls) 
+        public _DeleteFieldsControl
+            (
+            _ScreenLogin screenLogin,
+            Dictionary<string, Control> dictionaryControlsLogin,
+            _ScreenRegister screenRegister,
+            Dictionary<string, Control> dictionaryTokenControls,
+            _ScreenToken screenToken,
+            Dictionary<string, Control> dictionaryRegisterControls
+            ) 
         {
             _screenLogin = screenLogin;
+            this._dictionaryLoginControls = dictionaryControlsLogin;
+            _screenRegister = screenRegister;
+            this._dictionaryRegisterControls = dictionaryRegisterControls;
             _screenToken = screenToken;
-            this._dictionaryControls = dictionaryControls;
             this._dictionaryTokenControls = dictionaryTokenControls;
         }
-        private Dictionary<string, Control> _dictionaryControls;
+        private Dictionary<string, Control> _dictionaryLoginControls;
         private Guna2TextBox _txtUsername;
         private Guna2TextBox _txtPassword;
         private void dictionaryControlsDefinition() 
@@ -90,6 +101,55 @@ namespace DevOps_Learning.Class
             if(_txtToken2 != null) _txtToken2.Clear();
             if(_txtToken3 != null) _txtToken3.Clear();
             if(_txtToken4 != null) _txtToken4.Clear();
+        }
+
+        private Dictionary<string, Control> _dictionaryRegisterControls;
+        private Guna2TextBox txtSRfirstname;
+        private Guna2TextBox txtSRlastname;
+        private Guna2TextBox txtSRusername;
+        private Guna2TextBox txtSRdocumment;
+        private Guna2TextBox txtSRpassword;
+        private Guna2TextBox txtSRconfpassword;
+        private void dictionaryScreenregisterDefinition() 
+        {
+            if(_screenRegister != null && _screenRegister._dictionaryControls != null) 
+            {
+                var srcontrols = _screenRegister._dictionaryControls;
+                if (srcontrols.ContainsKey("txtSRfirstname") &&
+                    srcontrols.ContainsKey("txtSRlastname") && 
+                    srcontrols.ContainsKey("txtSRusername") && 
+                    srcontrols.ContainsKey("txtSRdocumment") && 
+                    srcontrols.ContainsKey("txtSRpassword") && 
+                    srcontrols.ContainsKey("txtSRconfpassword")) 
+                {
+                    txtSRfirstname = srcontrols["txtSRfirstname"] as Guna2TextBox;
+                    txtSRlastname = srcontrols["txtSRlastname"] as Guna2TextBox;
+                    txtSRusername = srcontrols["txtSRusername"] as Guna2TextBox;
+                    txtSRdocumment = srcontrols["txtSRdocumment"] as Guna2TextBox;
+                    txtSRpassword = srcontrols["txtSRpassword"] as Guna2TextBox;
+                    txtSRconfpassword = srcontrols["txtSRconfpassword"] as Guna2TextBox;
+
+                }
+                else 
+                {
+                    MessageBox.Show("Debug: _screenRegister._dictionaryControls is null");
+                }
+            }
+            else 
+            {
+                MessageBox.Show("Debug: dictionaryScreenregisterDefinition() not initialized");
+            }
+        }
+        public void deleteControlsSR(object sender, EventArgs e) 
+        {
+            dictionaryScreenregisterDefinition();
+
+            if (txtSRconfpassword != null) txtSRconfpassword.Clear();
+            if (txtSRdocumment != null) txtSRdocumment.Clear();
+            if (txtSRfirstname != null) txtSRfirstname.Clear();
+            if (txtSRlastname != null) txtSRlastname.Clear();
+            if (txtSRpassword != null) txtSRpassword.Clear();
+            if (txtSRusername != null) txtSRusername.Clear();
         }
     }
 }

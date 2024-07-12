@@ -13,7 +13,12 @@ namespace DevOps_Learning.Class
     {
         private _ScreenLogin _screenLogin;
         private _DeleteFieldsControl _deleteFieldsControl;
-        public _LoginMethodControl(_ScreenLogin screenLogin, _DeleteFieldsControl deleteFieldsControl, Dictionary<string, Control> dictionaryControls) 
+        public _LoginMethodControl
+            (
+            _ScreenLogin screenLogin,
+            _DeleteFieldsControl deleteFieldsControl,
+            Dictionary<string, Control> dictionaryControls
+            ) 
         {
             _screenLogin = screenLogin;
             _deleteFieldsControl = deleteFieldsControl;
@@ -26,14 +31,13 @@ namespace DevOps_Learning.Class
         {
             if (_screenLogin != null && _screenLogin.dictionaryControls != null) 
             {
-                var _txtUsername = _screenLogin.dictionaryControls;
-                var _txtPassword = _screenLogin.dictionaryControls;
-
-                if(_txtUsername.ContainsKey("txtUsername") &&
-                    _txtPassword.ContainsKey("txtPassword")) 
+                var controls = _screenLogin.dictionaryControls;
+                
+                if(controls.ContainsKey("txtUsername") &&
+                    controls.ContainsKey("txtPassword")) 
                 {
-                    txtUsername = _txtUsername["txtUsername"] as Guna2TextBox;
-                    txtPassword = _txtPassword["txtPassword"] as Guna2TextBox;
+                    txtUsername = controls["txtUsername"] as Guna2TextBox;
+                    txtPassword = controls["txtPassword"] as Guna2TextBox;
                 }
                 else 
                 {

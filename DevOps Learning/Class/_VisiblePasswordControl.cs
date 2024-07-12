@@ -10,12 +10,14 @@ namespace DevOps_Learning.Class
     internal class _VisiblePasswordControl
     {
         private _ScreenLogin _screenLogin;
+        private _ScreenRegister _screenRegister;
 
-        public _VisiblePasswordControl(_ScreenLogin screenlogin, Dictionary<string, Control> dictionaryControls)
+        public _VisiblePasswordControl(_ScreenLogin screenlogin, Dictionary<string, Control> dictionaryControls, _ScreenRegister screenRegister)
         {
             _screenLogin = screenlogin;
             this.dictionaryControls = dictionaryControls;
             dictionaryControlsDefinition();
+            _screenRegister = screenRegister;
         }
 
         private Dictionary<string, Control> dictionaryControls;
